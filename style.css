@@ -1,0 +1,82 @@
+body{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+.hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+    background-color: rgb(41, 38, 33);
+    width: 500px;
+    border: dotted 4px ;
+}
+img{
+    height: 300px;
+    border-radius: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin: 0;
+}
+h3{
+    padding-bottom: 30px;
+    margin: 0;
+    padding-top: 10px;
+}
+.short-intro{
+    margin: 0;
+    align-items: center;
+    gap: 2px;
+    width: 90%;
+}
+.name{
+    font-weight: bolder;
+    font-size: 25px;
+}
+.name:hover {
+    cursor: pointer;
+    color: white;
+    background-color: orange;
+    padding: 2px 6px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin:0 auto;
+    padding: 50px;
+    gap: 50px;
+    flex-wrap: wrap;
+    background-color: beige;
+    margin-top: 100px;
+}
+.icon{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+button{
+    width: 200px;
+
+}
+h4{
+    font-size: 20px;
+}
+p{
+    padding-left: 5px;
+
+}
