@@ -12,7 +12,7 @@ body{
     margin: 0 auto;
     padding: 0;
     background-color: blueviolet;
-    width: 500px;
+    /* width: 500px; */
     border: dotted 4px ;
     margin-top: 20px;
     padding-top: 10px;
@@ -83,8 +83,7 @@ button{
 }
 button:hover {
     border: solid 3px black;
-    margin: 5px;
-    padding: 5px;
+    transform: scale(1.2);
     box-shadow: 20px 20px 2px rgb(41, 38, 33) ;
     cursor: pointer;
     transition: all 0.3s ease;
