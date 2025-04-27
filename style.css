@@ -88,8 +88,8 @@ button:hover {
     cursor: pointer;
     transition: all 0.3s ease;
 }
-button:after {
-    transition: all 0.3s ease;
+button:active {
+    transform: scale(1);
 }
 h4{
     font-size: 20px;
