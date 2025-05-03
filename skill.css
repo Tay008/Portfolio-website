@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body{
     /* display: flex;
     justify-content: center;
@@ -8,6 +11,7 @@ body{
     font-family:'Times New Roman', Times, serif;
     font-size: 25px;
     background-color: rgb(84, 40, 103);
+    min-height: 300vh;
 }
 .first-half{
     border: 10px solid white;
@@ -89,4 +93,10 @@ img{
 }
 .HTML-skill{
     width: 50vw;
+}
+.CSS-skill{
+    width: 50vw;
+}
+#section{
+    scroll-behavior: smooth;
 }

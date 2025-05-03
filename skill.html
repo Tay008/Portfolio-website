@@ -20,42 +20,38 @@
         </div>
         <div class="grid-position">
             <div class="grid">
-                <a>
-                    <button>
-                        <img src="icons/3030115.webp" alt="picture of html">
-                        <h4>HTML</h4>
-                    </button>
-                </a>
-                <a>
-                    <button>
-                        <img src="icons/css-3.png" alt="picture of css">
-                        <h4>CSS</h4>
-                    </button>
-                </a>
-                <a>
-                    <button>
-                        <img src="icons/js.png" alt="Picture of javascript">
-                        <h4>JAVASCRIPT</h4>
-                    </button>
-                </a>
-                <a>
-                    <button>
-                        <img src="icons/python.png" alt="Picture of python">
-                        <h4>PYTHON</h4>
-                    </button>
-                </a>
-                <a>
-                    <button>
-                        <img src="icons/c.png" alt="Picture of C">
-                        <h4>C</h4>
-                    </button>
-                </a>
-                <a>
-                    <button>
-                        <img src="icons/tailwind-css3232.logowik.com.webp" alt="">
-                        <h4>TAILWIND</h4>
-                    </button>
-                </a>
+
+                <button onclick="navigateToHtml () ">
+                    <img src="icons/3030115.webp" alt="picture of html">
+                    <h4>HTML</h4>
+                </button>
+
+
+                <button onclick="navigateToCss ()">
+                    <img src="icons/css-3.png" alt="picture of css">
+                    <h4>CSS</h4>
+                </button>
+
+                <button>
+                    <img src="icons/js.png" alt="Picture of javascript">
+                    <h4>JAVASCRIPT</h4>
+                </button>
+
+                <button>
+                    <img src="icons/python.png" alt="Picture of python">
+                    <h4>PYTHON</h4>
+                </button>
+
+                <button>
+                    <img src="icons/c.png" alt="Picture of C">
+                    <h4>C</h4>
+                </button>
+
+                <button>
+                    <img src="icons/tailwind-css3232.logowik.com.webp" alt="">
+                    <h4>TAILWIND</h4>
+                </button>
+
             </div>
         </div>
     </div>
@@ -63,16 +59,16 @@
         <h1>
             Overview
         </h1>
-        <div class="HTML-skill">
+        <div class="HTML-skill" id="HTML-section">
             <ol>
-              <li>
-                  <h2>
-                      HTML Skills
-                  </h2>
-              </li>
+                <li>
+                    <h2>
+                        HTML Skills
+                    </h2>
+                </li>
             </ol>
-          <p>
-              Here is a breif introduction to my HTML skills.
+            <p>
+                Here is a breif introduction to my HTML skills.
             </p>
             <ul>
                 <li>I can efficiently work with nesting</li>
@@ -85,17 +81,38 @@
                 Hence I can create any kind of HTML structure for your website with SEO optimization and clean code
             </p>
         </div>
-        <div class="CSS-skill">
-            <ol>
-                <li>
-                    <h2>
-                        CSS
-                    </h2>
-                </li>
-            </ol>
+        <div class="CSS-skill" id="CSS-section">
+            
+                <ol>
+                    <li>
+                        <h2>
+                            CSS
+                        </h2>
+                    </li>
+                </ol>
+                <p>
+                    Here is a brief introduction to mu CSS skills.
+                </p>
+                <ul>
+                    <li>I can change fonts' properties.</li>
+                    <li>I can change the properties of elements as well as style them</li>
+                    <li>I can create themes which suits the website.</li>
+                    <li></li>
+                </ul>
+            
         </div>
     </div>
 
 </body>
+<script>
+    function navigateToHtml() {
+        const html = document.getElementById("HTML-section");
+        html.scrollIntoView({behavior : "smooth"});
+    };
+    function navigateToCss() {
+        const css = document.getElementById("CSS-section");
+        css.scrollIntoView({ behavior: "smooth" });
+    };
+</script>
 
 </html>
