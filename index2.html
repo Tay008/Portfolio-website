@@ -21,10 +21,11 @@ body{
     font-size: 25px;
     background-color: rgb(84, 40, 103);
     min-height: 300vh;
+    color: antiquewhite;
 }
 .first-half{
-    border: 10px solid white;
-    width: 40vw;
+    border: 5px white solid;
+    width: 50vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,34 +38,31 @@ body{
     margin: 0;
     /* width: 95%; */
     height: 50%;
-    padding-left: 100px;
-
+    /* padding-left: 100px; */
+    
 } 
   h1{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-start;
+      margin: 0;
+      padding: 0;
+      /* display: flex;
+    justify-content: flex-start; */
+    text-align: center;
   } 
 h3{
    margin: 0;
-    padding: 0;
-    display:flex ;
-    justify-content: center;
-    align-items: center;
+   padding: 0;
+   font-size: 0.8em;
 }
 .grid-position {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column
+    align-items: center; flex-direction: row;
 }
 .grid{
     display: grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 200px 200px 200px;
     gap: 20px;
     /* background-color: black; */
-    padding-left: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
     margin-top: 20px;
@@ -73,39 +71,41 @@ button{
     height: 30vh;
     border-radius: 10px;
 }
-    button:hover {
-        cursor: pointer;
-        opacity: 0.7;
-        transition: all 0.3s ease;
-        transform: scale(1.2);
-        box-shadow: 20px 20px 2px rgb(41, 38, 33) ;
+button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2px rgb(41, 38, 33) ;
     }
     button:active {
-        transform: scale(1);
-        opacity: 1;
-        transition: all 0.4s ease;
-        box-shadow: 10px 4px 6px rgba(0, 0, 0, 0.485);
+    transform: scale(1);
+    opacity: 1;
+    transition: all 0.4s ease;
+    box-shadow: 10px 4px 6px rgba(0, 0, 0, 0.485);
     }
-img{
-     width: 150px;
-     height: 100px; 
+    img{
+        width: 150px;
+        height: 100px; 
+    }
+    .second-half{
+        text-align: start;
+        margin: 0 auto;
+        width: 80vw;
+        background-color: blueviolet;
+        margin-top: 40px;
+        border: 10px solid rgb(164, 164, 105);
+        color: antiquewhite;
+        font-size: 1.1em;
 }
-.second-half{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.skill-list{
+    margin-left: 200px;
+}
+p{
+    padding-left: 5px;
+    width: 80%;
+    text-align: center;
     margin: 0 auto;
-    width: 80vw;
-    background-color: blueviolet;
-    margin-top: 40px;
-    border: 10px solid white;
-}
-.HTML-skill{
-    width: 50vw;
-}
-.CSS-skill{
-    width: 50vw;
 }
 #section{
     scroll-behavior: smooth;
@@ -120,7 +120,7 @@ img{
                 Hello everyone
             </h1>
             <h3>
-                Let me give you a quick overview of my skills
+                (Let me give you a quick overview of my skills)
             </h3>
         </div>
         <div class="grid-position">
@@ -175,10 +175,10 @@ img{
             <p>
                 Here is a breif introduction to my HTML skills.
             </p>
-            <ul>
+            <ul class="skill-list">
                 <li>I can efficiently work with nesting</li>
                 <li>I have a grip on HTML tables</li>
-                <li>I have knweledge of every kind of form</li>
+                <li>I have knoweledge of every kind of form</li>
                 <li>I use semantic HTML for the optimization of pages</li>
                 <li>I can create complex grids</li>
             </ul>
@@ -196,9 +196,9 @@ img{
                     </li>
                 </ol>
                 <p>
-                    Here is a brief introduction to mu CSS skills.
+                    Here is a brief introduction to my CSS skills.
                 </p>
-                <ul>
+                <ul class="skill-list">
                     <li>I can change fonts' properties.</li>
                     <li>I can change the properties of elements as well as style them</li>
                     <li>I can create themes which suits the website.</li>
